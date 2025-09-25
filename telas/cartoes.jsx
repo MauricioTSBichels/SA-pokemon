@@ -12,4 +12,15 @@ export default function cartoes({imagem, titulo, onPress}) {
   )
 }
 
-export const estilos = StyleSheet.create({})
+export const estilos = StyleSheet.create({
+cartao:{
+    backgroundColor:'#3cs0c5',
+    width:150,
+    height:150,
+    borderRadius:20,
+    alignItens: 'center',
+    justifyContent:'center'
+
+}
+
+})
