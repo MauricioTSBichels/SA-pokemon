@@ -7,9 +7,9 @@ export default function Zubat() {
       <Text style={estilos.titulo}>Zubat</Text>
       <View style={estilos.cxDescricao}>
         <Text style={estilos.descricao}>
-           Altura: 0.8 m{"\n"}
-           Peso: 7.5 kg{"\n"}
-           Tipo: Voador / Veneno{"\n"}
+           Altura: 0.8 m<br/>
+           Peso: 7.5 kg<br/>
+           Tipo: Voador / Veneno<br/>
            Fraquezas: Elétrico, Gelo, Psíquico, Pedra
         </Text>
       </View>

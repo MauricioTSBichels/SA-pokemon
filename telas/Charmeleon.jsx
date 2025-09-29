@@ -7,10 +7,10 @@ export default function Charmeleon() {
       <Text style={estilos.titulo}>Charmeleon</Text>
       <View style={estilos.cxDescricao}>
         <Text style={estilos.descricao}>
-          • Altura: 1.1 m{"\n"}
-          • Peso: 19.0 kg{"\n"}
-          • Tipo: Fogo{"\n"}
-          • Fraquezas: Água, Rocha, Terra
+          Altura: 1.1 m<br/>
+          Peso: 19.0 kg<br/>
+          Tipo: Fogo<br/>
+          Fraquezas: Água, Rocha, Terra
         </Text>
       </View>
       <StatusBar hidden />

@@ -7,9 +7,9 @@ export default function Charmander() {
       <Text style={estilos.titulo}>Charmander</Text>
       <View style={estilos.cxDescricao}>
         <Text style={estilos.descricao}>
-           Altura: 0.6 m{"\n"}
-           Peso: 8.5 kg{"\n"}
-           Tipo: Fogo{"\n"}
+           Altura: 0.6 m<br/>
+           Peso: 8.5 kg<br/>
+           Tipo: Fogo<br/>
            Fraquezas: Água, Rocha, Terra
         </Text>
       </View>

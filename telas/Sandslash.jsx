@@ -7,9 +7,9 @@ export default function Sandslash() {
       <Text style={estilos.titulo}>Sandslash</Text>
       <View style={estilos.cxDescricao}>
         <Text style={estilos.descricao}>
-           Altura: 1.0 m{"\n"}
-           Peso: 29.5 kg{"\n"}
-           Tipo: Terra{"\n"}
+           Altura: 1.0 m<br/>
+           Peso: 29.5 kg<br/>
+           Tipo: Terra<br/>
            Fraquezas: Água, Gelo, Planta
         </Text>
       </View>

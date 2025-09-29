@@ -7,9 +7,9 @@ export default function Squirtle() {
       <Text style={estilos.titulo}>Squirtle</Text>
       <View style={estilos.cxDescricao}>
         <Text style={estilos.descricao}>
-           Altura: 0.5 m{"\n"}
-           Peso: 9.0 kg{"\n"}
-           Tipo: Água{"\n"}
+           Altura: 0.5 m<br/>
+           Peso: 9.0 kg<br/>
+           Tipo: Água<br/>
            Fraquezas: Elétrico, Planta
         </Text>
       </View>
