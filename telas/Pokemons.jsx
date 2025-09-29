@@ -1,49 +1,49 @@
-import { ImageBackground, StyleSheet, StatusBar, Text, View, Image } from "react-native";
+import { Image, StyleSheet, StatusBar, Text, View } from "react-native";
 import Cartoes from "./cartoes";
 
 export default function Pokemons({navigation}){
     return (
-        <View >
+        <View>
             <Image
-               source={require('../imagens/logomarca_pokemon.png')}   
-               style={{margin: 'auto', marginTop: 30}}         
+                source={require('../imagens/logomarca_pokemon.png')}
+                style={{margin: 'auto', marginTop: 30}}
             />
+           <View style={{flexDirection: 'row',
+                         flexWrap: 'wrap',
+                         gap: 20
+                        }}>
+                <Cartoes 
+                    imagem={require('../imagens/bulbassauro.png')}
+                    titulo={"Bulbasauro"} 
+                    onPress={()=>{navigation.navigate("Bulbassauro")}}   
+                />
+                <Cartoes 
+                    imagem={require('../imagens/charmander.png')}
+                    titulo={"Charmander"} 
+                    onPress={()=>{navigation.navigate("Bulbassauro")}}   
+                />
+                <Cartoes 
+                    imagem={require('../imagens/Squirtle.png')}
+                    titulo={"Squirtle"} 
+                    onPress={()=>{navigation.navigate("Bulbassauro")}}   
+                />
+                <Cartoes 
+                    imagem={require('../imagens/zubat.png')}
+                    titulo={"Zubat"} 
+                    onPress={()=>{navigation.navigate("Bulbassauro")}}   
+                />
+                <Cartoes 
+                    imagem={require('../imagens/Sandslash.png')}
+                    titulo={"Sandslash"} 
+                    onPress={()=>{navigation.navigate("Bulbassauro")}}   
+                />
+                <Cartoes 
+                    imagem={require('../imagens/Charmeleon.png')}
+                    titulo={"Charmeleon"} 
+                    onPress={()=>{navigation.navigate("Bulbassauro")}}   
+                />
+           </View>
             <StatusBar hidden={true}/>
-            <View style={{flexDirection: 'row',
-                flexwrap:'wrap',
-                gap:10
-            }}>
-                <Cartoes
-                  imagem={require('../imagens/bulbassauro.png')}
-                  titulo={"Bulbassauro"}
-                  onPress={()=>navigation.navigative("Bulbassauro")}
-                />
-                <Cartoes
-                  imagem={require('../imagens/charmander.png')}
-                  titulo={"charmander"}
-                  onPress={()=>navigation.navigative("charmander")}
-                />
-                <Cartoes
-                  imagem={require('../imagens/Squirtle.png')}
-                  titulo={"Squirtle"}
-                  onPress={()=>navigation.navigative("Squirtle")}
-                />
-                <Cartoes
-                  imagem={require('../imagens/zubat.png')}
-                  titulo={"zubat"}
-                  onPress={()=>navigation.navigative("zubat")}
-                />
-                <Cartoes
-                  imagem={require('../imagens/wartoid.png')}
-                  titulo={"wartoid"}
-                  onPress={()=>navigation.navigative("wartoid")}
-                />
-                <Cartoes
-                  imagem={require('../imagens/Charmeleon.png')}
-                  titulo={"Charmeleon"}
-                  onPress={()=>navigation.navigative("Charmeleon")}
-                />
-            </View>
         </View>
     );
 }

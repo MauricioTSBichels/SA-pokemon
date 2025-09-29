@@ -1,32 +1,25 @@
-import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
-import React from 'react'
-
-export default function cartoes({imagem, titulo, onPress}) {
-  return (
-    <TouchableOpacity style={estilos.cartao} onPress={onPress}>
-      <Image
-       source={imagem} style={{width:80, height:80}} resizeMode="contain">
-      </Image>
-      <Text style={estilos.titulo}>{titulo}</Text>
-    </TouchableOpacity>
-  )
+import { TouchableOpacity, StyleSheet, Text, ImageBase, Image } from 'react-native';
+export default function Cartoes({imagem, titulo, onPress}){
+    return(
+        <TouchableOpacity style={estilos.cartao} onPress={onPress}>
+           <Image source={imagem} style={{width: 80, height: 80}} resizeMode='contain'/>
+           <Text style={estilos.titulo}>{titulo}</Text>     
+        </TouchableOpacity>
+    );
 }
-
 export const estilos = StyleSheet.create({
-titulo:{
-   backgroundColor:'#737070',
-   color:'white',
-   padding:5,
-   borderRadius:20,
-},
-
-cartao:{
-    backgroundColor:'#3cs0c5',
-    width:130,
-    height:130,
-    borderRadius:30,
-    alignItens: 'center',
-    justifyContent:'center'
-}
-
+    titulo:{
+        backgroundColor: '#737070',
+        color: 'white',
+        padding: 5,
+        borderRadius: 10
+    },
+    cartao:{
+        backgroundColor: '#3ca0c5',
+        width: 150,
+        height: 150,
+        borderRadius: 20,
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
 })
