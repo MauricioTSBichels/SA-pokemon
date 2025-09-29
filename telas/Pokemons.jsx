@@ -1,7 +1,7 @@
-import { ImageBackground, StyleSheet, StatusBar, Text, View } from "react-native";
-import cartoes from "./cartoes";
+import { ImageBackground, StyleSheet, StatusBar, Text, View, Image } from "react-native";
+import Cartoes from "./cartoes";
 
-export default function Pokemons(){
+export default function Pokemons({navigation}){
     return (
         <View >
             <Image
@@ -9,11 +9,29 @@ export default function Pokemons(){
                style={{margin: 'auto', marginTop: 30}}         
             />
             <StatusBar hidden={true}/>
-            <View>
+            <View style={{flexDirection: 'row',
+                flexwrap:'wrap',
+                gap:20
+            }}>
                 <Cartoes
-                  imagem={require('../imagens/Bulbassauro.png')}
+                  imagem={require('../imagens/bulbassauro.png')}
                   titulo={"Bulbassauro"}
                   onPress={()=>navigation.navigative("Bulbassauro")}
+                />
+                <Cartoes
+                  imagem={require('../imagens/charmander.png')}
+                  titulo={"charmander"}
+                  onPress={()=>navigation.navigative("charmander")}
+                />
+                <Cartoes
+                  imagem={require('../imagens/Squirtle.png')}
+                  titulo={"Squirtle"}
+                  onPress={()=>navigation.navigative("Squirtle")}
+                />
+                <Cartoes
+                  imagem={require('../imagens/zubat.png')}
+                  titulo={"zubat"}
+                  onPress={()=>navigation.navigative("zubat")}
                 />
             </View>
         </View>
