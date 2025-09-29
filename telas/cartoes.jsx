@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function cartoes({imagem, titulo, onPress}) {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity style={estilos.cartao} onPress={onPress}>
       <Image
        source={imagem} style={{width:80, height:80}} resizeMode="contain">
       </Image>
@@ -16,15 +16,15 @@ export const estilos = StyleSheet.create({
 titulo:{
    backgroundColor:'#737070',
    color:'white',
+   padding:5,
    borderRadius:20,
-   alignItens: 'center',
-   justifyContent:'center'
 },
+
 cartao:{
     backgroundColor:'#3cs0c5',
-    width:150,
-    height:150,
-    borderRadius:20,
+    width:130,
+    height:130,
+    borderRadius:30,
     alignItens: 'center',
     justifyContent:'center'
 }

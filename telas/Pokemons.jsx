@@ -11,7 +11,7 @@ export default function Pokemons({navigation}){
             <StatusBar hidden={true}/>
             <View style={{flexDirection: 'row',
                 flexwrap:'wrap',
-                gap:20
+                gap:10
             }}>
                 <Cartoes
                   imagem={require('../imagens/bulbassauro.png')}
@@ -32,6 +32,16 @@ export default function Pokemons({navigation}){
                   imagem={require('../imagens/zubat.png')}
                   titulo={"zubat"}
                   onPress={()=>navigation.navigative("zubat")}
+                />
+                <Cartoes
+                  imagem={require('../imagens/wartoid.png')}
+                  titulo={"wartoid"}
+                  onPress={()=>navigation.navigative("wartoid")}
+                />
+                <Cartoes
+                  imagem={require('../imagens/Charmeleon.png')}
+                  titulo={"Charmeleon"}
+                  onPress={()=>navigation.navigative("Charmeleon")}
                 />
             </View>
         </View>
