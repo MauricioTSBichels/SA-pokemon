@@ -1,4 +1,4 @@
-import { View, Text, StatusBar, Image, StyleSheet} from "react-native";
+import { View, Text, StatusBar, Image, StyleSheet, backgorundColor} from "react-native";
 
 export default function Bulbassauro(){
     return (
@@ -21,17 +21,8 @@ export default function Bulbassauro(){
     );
 }
 export const estilos = StyleSheet.create({
- tela:{
-    backgorundColor:'#2bb72b',
-    flex:1,
-    alignItems: 'center',
-    padding:30
- },
- titulo:{
-   fontSize: 40,
-   color: 'white',
-   fontWeight: '600'  
- }
-
-
+    tela: { backgroundColor: "rgb(27, 192, 27)", flex: 1, alignItems: "center", padding: 30 },
+    titulo: { fontSize: 40, color: "white", fontWeight: "600", marginVertical: 10 },
+    cxDescricao: { backgroundColor: "rgba(255,255,255,0.5)", width: 300, borderRadius: 20, padding: 20 },
+    descricao: { fontSize: 18, color: "#000" },
 })
